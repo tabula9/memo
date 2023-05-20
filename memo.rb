@@ -9,7 +9,7 @@ memo_type = gets.to_i # ユーザーの入力値を取得し、数字へ変換�
 
 if memo_type == 1
   puts "拡張子を除いたファイル名を入力してください"
-  memo_name = gets
+  memo_name = gets.chomp
   
   puts "メモしたい内容を記入してください"
   puts "完了したらCntl + Dを押します"
@@ -36,7 +36,7 @@ if memo_type == 1
   
 elsif memo_type == 2
   puts "編集したいファイル名を拡張子を除いて入力してください"
-  file_name = gets
+  file_name = gets.chomp
   
   puts "メモの編集をしてください"
   puts "完了したらCntl + Dを押します"
